@@ -34,7 +34,7 @@ jobs:
 
       - name: Install OSMnx
         run: |
-          uv pip install -e .
+          uv pip install --no-deps -e .
           micromamba list
           micromamba info --all
 
