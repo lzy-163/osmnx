@@ -32,6 +32,9 @@ jobs:
           environment-file: environments/tests/env-test-minimal.yml
           post-cleanup: none
 
+      - name: Install uv
+        run: micromamba install -y uv
+
       - name: Install OSMnx
         run: |
           uv pip install -e .
